@@ -1,33 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.card-row{
+    padding: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 200px;
+  gap: 8px;
+
 }
 
-header {
-    background-color: #504d4d;
-    padding: 20px;
+.card-row .card{
+    padding: 8px;
+    background-color: aqua;
+}
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 24px;
+}
+
+.card{
+    background-color: rgb(144, 151, 151);
+    border: 1px solid #ddd;
+    border-radius: 8px;
     text-align: center;
-}
-
-.imagen-centrada   
- {
-    text-align: center;
-    margin: 20px;
-}
-
-.imagen-centrada img {
-    max-width: 100%;
-}
-.galeria {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 300px; /* Ajusta la altura según tus necesidades */
-  }
-  
-  .galeria img {
-    max-width: 30%; /* Ajusta el ancho máximo de las imágenes */
-    margin: 10px;
-    border: solid 7px rgb(0, 0, 0);
-  }
+    padding: 12px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.card :hover{}
